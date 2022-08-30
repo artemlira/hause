@@ -1,0 +1,109 @@
+.header {
+   min-height: rem(800px);
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+
+}
+
+.header__image {
+   height: 100%;
+   background-image: url(../img/header/Rectangle.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.header__container {
+   width: 100%;
+   background-color: $color3;
+   position: relative;
+}
+
+.header__content {
+   position: absolute;
+   width: 100%;
+   height: rem(96px);
+   display: grid;
+   align-items: center;
+   grid-template-columns: 0.8fr auto 0.8fr;
+   // z-index: 10;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+
+li {
+   list-style: none;
+
+}
+
+a {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: $color1;
+   font-family: $roboto;
+   font-size: rem(12px);
+   line-height: rem(18px);
+}
+
+.container {}
+
+.header__menu__left {}
+
+.menu__left__list,
+.menu__right__list {
+   display: flex;
+   gap: rem(60px);
+}
+
+.menu__right__list {
+   justify-content: end;
+}
+
+.haeder__title {
+   max-width: rem(600px);
+   min-height: rem(423px);
+   display: flex;
+   flex-direction: column;
+   margin: rem(277px) 0 0 rem(60px);
+}
+
+.title {
+   font-family: $liberation;
+   font-size: rem(73px);
+   line-height: rem(96px);
+   color: $color1;
+   margin-bottom: rem(35px);
+}
+
+.text {
+   flex: 1 1 auto;
+   line-height: rem(32px);
+   color: $color1;
+}
+
+.header__button {
+   border: 1px solid #fff;
+   background-color: rgba(255, 255, 255, 0);
+   width: rem(180px);
+   height: rem(52px);
+   text-transform: uppercase;
+   transition: all 0.8s;
+
+   &:hover {
+      background-color: rgba(255, 255, 255, 0.507);
+   }
+}
+
+// @include tablet {
+//    .menu__icon {
+//       display: block;
+//    }
+// }
+
+
+.menu__left__item {}
+
+.header__logo {}
+
+.header__menu__right {}

@@ -1,0 +1,55 @@
+//Переменные=========================================================================
+$minWidth: 320px;
+$maxWidth: 1440;
+$maxWidthContainer: 1320 + 12;
+$md1: $maxWidthContainer + 12;
+$netbook: 991.98;
+$tablet: 767.98;
+$phone: 479.98;
+
+// цвета в макете
+
+$color1: #fff;
+$color2: #000;
+$color3: #996B60;
+// $color4: ;
+// $color5: ;
+
+// Шрифт по умолчанию================================================================
+$roboto: "Roboto", sans-serif;
+$liberation: "Liberation", sans-serif;
+
+
+//функция перевода в rem
+@function rem($size) {
+   @return calc($size / 16px * 1rem);
+}
+
+//функция перевода в %
+@function pr($sizeBox , $size) {
+   @return $size/$sizeBox*100%;
+}
+
+@mixin notebook {
+   @media screen and (max-width:1260px) {
+      @content;
+   }
+}
+
+@mixin netbook {
+   @media screen and (max-width:992px) {
+      @content;
+   }
+}
+
+@mixin tablet {
+   @media screen and (max-width:768px) {
+      @content;
+   }
+}
+
+@mixin phone {
+   @media screen and (max-width:480px) {
+      @content;
+   }
+}

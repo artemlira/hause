@@ -1,0 +1,39 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+//Оболочка=========================================================================
+.wrapper {
+   width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   font-family: $roboto;
+   font-size: rem(18px);
+   font-weight: 400;
+}
+
+//основная сетка====================================================================
+.container {
+   max-width: $maxWidthContainer + px;
+   padding-inline: rem(6px);
+   margin: 0 auto;
+
+   @include netbook {
+      max-width: $netbook + px;
+   }
+
+   @include tablet {
+      max-width: $tablet + px;
+   }
+
+   @include phone {
+      max-width: none;
+      padding: 0 rem(10px);
+   }
+}
