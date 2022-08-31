@@ -1,8 +1,9 @@
 .menu__icon {
-   // display: none;
+   display: none;
    position: relative;
    width: rem(45px);
    height: rem(35px);
+   z-index: 10;
 
    span {
       top: calc(50% - 1px);
@@ -15,7 +16,7 @@
       content: "";
       width: 100%;
       height: rem(3px);
-      background-color: $color3;
+      background-color: $color1;
       position: absolute;
       left: 0;
    }
@@ -46,16 +47,16 @@
 }
 
 .burger__wrapper {
-   // display: none;
+   display: none;
 }
 
 .burger__menu {
    position: fixed;
-   top: rem(50px);
+   top: rem(96px);
    left: 0;
    right: 0;
    width: 100%;
-   background-color: rgba(125, 180, 176, 0.85);
+   background-color: rgba(180, 138, 125, 0.85);
    transform: translateX(100%);
    transition: all 0.8s;
 

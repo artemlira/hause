@@ -14,7 +14,8 @@
    flex-direction: column;
    position: relative;
    font-family: $roboto;
-   font-size: rem(18px);
+   // font-size: rem(18px);
+   @include font (18, 14);
    font-weight: 400;
 }
 
