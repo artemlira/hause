@@ -504,6 +504,10 @@ textarea {
   font-weight: 400;
 }
 
+.page {
+  flex: 1 1 auto;
+}
+
 .container {
   max-width: 1332px;
   padding-inline: 0.375rem;
@@ -693,6 +697,21 @@ a {
   font-size: 1.5rem;
 }
 
+.about {
+  margin: 3.125rem 0 2.5rem 0;
+  text-align: center;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10.3125rem;
+}
+
+.about__logo {
+  margin-top: 2.25rem;
+}
+
 @media (min-width: 767px) {
   .wrapper {
     font-size: calc(14px + 6.8 * (100vw / 1440));
@@ -707,9 +726,20 @@ a {
   }
 }
 
+@media screen and (max-width: 1260px) {
+  .about__container {
+    gap: 3.125rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .container {
     max-width: 991.98px;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 

@@ -19,6 +19,10 @@
    font-weight: 400;
 }
 
+.page {
+   flex: 1 1 auto;
+}
+
 //основная сетка====================================================================
 .container {
    max-width: $maxWidthContainer + px;

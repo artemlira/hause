@@ -1,0 +1,23 @@
+.about {
+   margin: rem(50px) 0 rem(40px) 0;
+   text-align: center;
+}
+
+.about__container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: rem(165px);
+
+   @include notebook {
+      gap: rem(50px);
+   }
+
+   @include netbook {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+   }
+}
+
+.about__logo {
+   margin-top: rem(36px);
+}
