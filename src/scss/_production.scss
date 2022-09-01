@@ -1,0 +1,85 @@
+.production {
+
+   margin-bottom: rem(60px);
+}
+
+.production__container {
+   border-bottom: 1px solid #000;
+   padding-bottom: rem(80px);
+}
+
+.production__title {
+   max-width: rem(705px);
+   margin-inline: auto;
+   text-align: center;
+   margin-bottom: rem(80px);
+
+   h2 {
+      font-family: $liberation;
+      @include font (64, 20);
+      line-height: rem(80px);
+      margin-bottom: rem(24px);
+   }
+}
+
+.production__about {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: rem(55px);
+
+   @include tablet {
+      grid-template-columns: 1fr;
+   }
+}
+
+.products {
+   display: flex;
+   flex-direction: column;
+}
+
+.products__image {
+   margin-bottom: rem(20px);
+
+   img {
+      width: 100%;
+      max-height: 100%;
+   }
+}
+
+.products__title {
+   font-family: $liberation;
+   @include font (30, 18);
+   text-align: center;
+   font-weight: 400;
+   margin-bottom: rem(16px);
+}
+
+.products__text {
+   text-align: center;
+   @include font (16, 12);
+   line-height: rem(28px);
+   margin-bottom: rem(27px);
+   flex: 1 1 auto;
+}
+
+.products__btn {
+   width: rem(180px);
+   height: rem(52px);
+   transition: all 0.8s;
+   margin-inline: auto;
+
+   button {
+      width: 100%;
+      height: 100%;
+      color: $color1;
+      background-color: $color2;
+      text-transform: uppercase;
+      border: none;
+   }
+
+   &:hover {
+      button {
+         background-color: #888888;
+      }
+   }
+}

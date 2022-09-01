@@ -22,7 +22,7 @@ $liberation: "Liberation", sans-serif;
 // Адаптивный шрифт ================================================================
 @mixin font($pcSize, $mobSize) {
    $addSize: $pcSize - $mobSize;
-   $addMobSize: $addSize +$addSize * 0.7;
+   $addMobSize: $addSize +$addSize * 0.0000007;
 
    @media (max-width: 767px) {
       font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));

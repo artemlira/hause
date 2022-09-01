@@ -1,12 +1,15 @@
 .about {
-   margin: rem(50px) 0 rem(40px) 0;
+   margin-block: rem(50px);
    text-align: center;
+
 }
 
 .about__container {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: rem(165px);
+   border-bottom: 1px solid #000;
+   padding-bottom: rem(40px);
 
    @include notebook {
       gap: rem(50px);
