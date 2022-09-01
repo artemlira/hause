@@ -1,11 +1,6 @@
-.production {
-
-   margin-bottom: rem(60px);
-}
-
 .production__container {
    border-bottom: 1px solid #000;
-   padding-bottom: rem(80px);
+   padding-bottom: rem(60px);
 }
 
 .production__title {
@@ -26,6 +21,7 @@
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: rem(55px);
+   padding-bottom: rem(80px);
 
    @include tablet {
       grid-template-columns: 1fr;
@@ -35,6 +31,7 @@
 .products {
    display: flex;
    flex-direction: column;
+
 }
 
 .products__image {

@@ -1,0 +1,48 @@
+.aperitif {
+   padding-top: rem(60px);
+}
+
+.aperitif__container {
+   min-height: rem(810px);
+   display: grid;
+   grid-template-rows: 2.9fr 1fr;
+   gap: rem(55px);
+   border-bottom: 1px solid #000;
+}
+
+
+
+.aperitif__image {
+   background-image: url(../img/aperitif/01.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.aperitif__about {
+   display: grid;
+   grid-template-columns: auto minmax(auto, 548px);
+   gap: rem(15px);
+
+   @include tablet {
+      grid-template-columns: 1fr;
+   }
+}
+
+.aperitif__about__title {
+   font-family: $liberation;
+   @include font(53, 20);
+   line-height: rem(80px);
+
+   @include tablet {
+      text-align: center;
+   }
+}
+
+.aperitif__about__text {
+   line-height: rem(32px);
+
+   @include tablet {
+      text-align: center;
+   }
+}

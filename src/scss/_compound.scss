@@ -1,0 +1,52 @@
+.compaund__container {
+   min-height: rem(608px);
+   padding-block: rem(60px) rem(50px);
+   display: grid;
+   grid-template-columns: 1fr 2.28fr;
+   gap: rem(55px);
+
+   @include tablet {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+}
+
+
+
+.compaund__about {
+   margin-top: rem(113px);
+   display: flex;
+   flex-direction: column;
+   gap: rem(20px);
+
+   h4,
+   h3 {
+      font-family: $liberation;
+      @include font(30, 20);
+      line-height: rem(44px);
+   }
+
+   h3 {
+      @include font(36, 22);
+   }
+
+   p {
+      line-height: rem(32px);
+   }
+
+   @include tablet {
+      margin-top: 0;
+
+      h3,
+      h4,
+      p {
+         text-align: center;
+      }
+   }
+}
+
+.compaund__image {
+   background-image: url(../img/compound/01.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
