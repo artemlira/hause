@@ -1,0 +1,46 @@
+.reviews {
+   background-color: $color2;
+   color: $color1;
+}
+
+.reviews__container {
+   min-height: rem(313px);
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: rem(165px);
+   padding-block: rem(50px);
+
+   @include netbook {
+      gap: rem(100px);
+   }
+
+   @include tablet {
+      gap: rem(20px);
+   }
+
+   @include phone {
+      grid-template-columns: 1fr;
+   }
+}
+
+.review__text {
+   margin-top: rem(20px);
+   line-height: rem(32px);
+   text-align: center;
+}
+
+.client__name {
+   @include font(14, 12);
+   line-height: rem(21px);
+   text-transform: uppercase;
+   text-align: center;
+   margin-block: rem(17px) rem(10px);
+}
+
+.review__about {
+   @include font(16, 14);
+   line-height: rem(24px);
+   color: rgba(138, 138, 138, 1);
+   text-transform: capitalize;
+   text-align: center;
+}

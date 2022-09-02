@@ -1,0 +1,63 @@
+.make__container {
+   min-height: rem(590px);
+   display: grid;
+   grid-template-columns: 1fr 1.2fr;
+   column-gap: rem(110px);
+   padding-block: rem(60px);
+
+   @include tablet {
+      grid-template-columns: 1fr;
+   }
+
+}
+
+.make__image {
+   background-image: url(../img/make/01.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   @include tablet {
+      height: rem(470px);
+   }
+}
+
+.make__about {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.make__about__title {
+   font-family: $liberation;
+   @include font (64, 20);
+   line-height: rem(80px);
+
+   @include tablet {
+      text-align: center;
+   }
+}
+
+.make__about__text {
+   @include font (18, 14);
+   line-height: rem(32px);
+
+   p {
+      margin-block-end: rem(35px);
+   }
+
+   @include tablet {
+      text-align: center;
+   }
+}
+
+.learn__more,
+.close {
+   @include font (12, 10);
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
+.hide {
+   display: none;
+}
