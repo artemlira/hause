@@ -1,0 +1,154 @@
+.footer {
+   background-color: $color2;
+}
+
+.footer__container {
+   display: flex;
+   flex-direction: column;
+   padding-block: rem(45px) rem(40px);
+}
+
+.footer__contant {
+   flex: 1 1 auto;
+   margin-block-end: rem(125px);
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+
+   @include tablet {
+      grid-template-columns: 1fr;
+      margin-block-end: rem(0px);
+   }
+
+   @include phone {
+      text-align: center;
+   }
+}
+
+.contant__newsletter {
+   max-width: rem(440px);
+   color: $color1;
+
+   @include tablet {
+      margin-inline: auto;
+   }
+}
+
+.newsletter__title {
+   font-family: $liberation;
+   @include font(42, 18);
+   line-height: rem(72px);
+   margin-block-end: rem(12px);
+}
+
+.newsletter__text {
+   @include font(18, 14);
+   line-height: rem(27px);
+   margin: 0 rem(16px) rem(14px) 0;
+}
+
+.newsletter__form {
+   height: rem(53px);
+   display: grid;
+   grid-template-columns: 80% 20%;
+   align-items: center;
+   border-bottom: 1px solid #8A8A8A;
+   margin-block-end: rem(20px);
+
+   input {
+      background-color: rgba(255, 255, 255, 0);
+      border: none;
+      letter-spacing: 0.12px;
+      @include font(9, 8);
+      text-transform: uppercase;
+   }
+
+   .submit {
+      color: $color1;
+      @include font(12, 10);
+   }
+}
+
+.contant__contacts {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1.03fr;
+
+   @include phone {
+      display: none;
+   }
+}
+
+.explore,
+.follow,
+.emails {
+   padding-block-end: rem(16px);
+
+   @include phone {
+      border-bottom: 1px solid #8A8A8A;
+   }
+}
+
+.explore__title,
+.follow__tile,
+.emails__title {
+   margin-block-end: rem(25px);
+   color: $color1;
+   @include font(14, 12);
+   text-transform: uppercase;
+
+   @include phone {
+      margin-block-start: rem(10px);
+   }
+}
+
+.explore__item,
+.follow__item,
+.emails__item {
+
+   a {
+      @include font(12, 10);
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 1px;
+   }
+}
+
+.explore__item:not(:last-child),
+.follow__item:not(:last-child),
+.emails__item:not(:last-child) {
+   margin-block-end: rem(21px);
+}
+
+.footer__menu {
+   height: rem(39px);
+
+   @include tablet {
+      display: none;
+   }
+
+}
+
+.footer__list {
+   display: flex;
+   gap: rem(60px);
+
+
+}
+
+.footer__item {
+   a {
+      @include font(16, 14);
+      color: rgba(255, 255, 255, 0.6);
+      text-transform: capitalize;
+   }
+}
+
+.hidden,
+.slider {
+   display: none;
+}
+
+.slider {
+   @include phone {
+      display: block;
+   }
+}

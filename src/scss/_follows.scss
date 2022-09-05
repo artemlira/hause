@@ -1,0 +1,78 @@
+.follows {
+   min-height: rem(568px);
+   background-image: url(../img/follows/01.jpg);
+   background-repeat: no-repeat;
+   // background-size: cover;
+}
+
+.follows__contaner {
+   min-height: rem(568px);
+   display: grid;
+   grid-template-columns: minmax(auto, rem(550px));
+   grid-template-rows: 1fr;
+   padding-block: rem(60px);
+}
+
+.follows__wrapper {
+   height: 100%;
+   display: grid;
+   grid-template-rows: 2.43fr 1fr;
+   gap: rem(20px);
+   color: $color1;
+   text-align: center;
+}
+
+.follows__music {
+   background-color: $color2;
+   padding-inline: rem(70px);
+}
+
+.music__title {
+   font-family: $liberation;
+   @include font(55, 20);
+   line-height: rem(80px);
+   margin-block: rem(40px) rem(10px);
+}
+
+.music__text {
+   text-align: center;
+   @include font(16, 12);
+   line-height: rem(28px);
+   margin-block-end: rem(26px);
+}
+
+.music__btn {
+   width: rem(180px);
+   height: rem(52px);
+   border-color: $color1;
+   color: $color2;
+   border: none;
+   text-transform: uppercase;
+}
+
+
+.follows__social-network {
+   background-color: $color2;
+   padding-block: rem(30px);
+}
+
+.network__text {
+   @include font(16, 12);
+   line-height: rem(26px);
+}
+
+.social__network {
+   display: flex;
+   gap: rem(21px);
+   justify-content: center;
+   @include font(12, 10);
+   text-transform: uppercase;
+   margin-block-start: rem(17px);
+   // color: rgba(255, 255, 255, 1);
+
+   p {
+      letter-spacing: 1px;
+      line-height: rem(18px);
+   }
+
+}
